@@ -1,8 +1,3 @@
-#Code
-num1, y, num2 = input().split(' ')
-num1= int(num1)
-num2 = int(num2)
-
 #Funktionen definieren die Rechenart
 def summe(num1, num2):
 	sum = num1 + num2
@@ -35,14 +30,16 @@ def rechenart(y):
         	differenz(num1, num2)
 	return
 
-#Code
-rechenart(y)
-
-#While-Schleife
-antwort = input("Nochmal? ")
-while (antwort == "Ja"):
+def rechnung(num1, y, num2):
 	num1, y, num2 = input().split(' ')
-	num1 = int(num1)
+	num1= int(num1)
 	num2 = int(num2)
 	rechenart(y)
 	antwort = input("Nochmal? ")
+	return
+
+rechnung(num1, y, num2)
+
+#While-Schleife
+while (antwort == "Ja"):
+	rechnung(num1, y, num2)
