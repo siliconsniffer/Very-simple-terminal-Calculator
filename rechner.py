@@ -3,7 +3,7 @@ num1, y, num2 = input().split(' ')
 num1= int(num1)
 num2 = int(num2)
 
-#Funktionen
+#Funktionen definieren die Rechenart
 def summe(num1, num2):
 	sum = num1 + num2
 	print(sum)
@@ -15,7 +15,7 @@ def produkt(num1, num2):
 	return
 	
 def quotient(num1, num2):
-	quotient = num1 / num2
+	quotient = num1 // num2
 	print(quotient)
 	return
 	
@@ -25,28 +25,24 @@ def differenz(num1, num2):
 	return
 	
 def rechenart(y):
-	 if  y == "+":
-	 	summe(num1, num2)
-        elif y == "*":
-        produkt(num1, num2)
-        elif y == "/":
-        quotient(num1, num2)
-        elif y == "-":
-        differenz(num1, num2)
-
-#Code
 	if  y == "+":
 		summe(num1, num2)
 	elif y == "*":
 		produkt(num1, num2)
 	elif y == "/":
-		quotient(num1, num2)
+        	quotient(num1, num2)
 	elif y == "-":
-		differenz(num1, num2)
+        	differenz(num1, num2)
+	return
 
-#Another one?
+#Code
+rechenart(y)
+
+#While-Schleife
 antwort = input("Nochmal? ")
 while (antwort == "Ja"):
 	num1, y, num2 = input().split(' ')
+	num1 = int(num1)
+	num2 = int(num2)
 	rechenart(y)
 	antwort = input("Nochmal? ")
