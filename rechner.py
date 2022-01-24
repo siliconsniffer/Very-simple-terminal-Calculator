@@ -1,8 +1,3 @@
-#Code
-num1, y, num2 = input().split(' ')
-num1= int(num1)
-num2 = int(num2)
-
 #Funktionen definieren die Rechenart
 def summe(num1, num2):
 	sum = num1 + num2
@@ -36,6 +31,9 @@ def rechenart(y):
 	return
 
 #Code
+num1, y, num2 = input().split(' ')
+num1= int(num1)
+num2 = int(
 rechenart(y)
 
 #While-Schleife
