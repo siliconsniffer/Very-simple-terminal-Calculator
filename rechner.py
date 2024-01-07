@@ -25,9 +25,9 @@ def rechenart(y):
 	elif y == "*":
 		produkt(num1, num2)
 	elif y == "/":
-        	quotient(num1, num2)
+		quotient(num1, num2)
 	elif y == "-":
-        	differenz(num1, num2)
+		differenz(num1, num2)
 	return
 
 #Code
