@@ -11,7 +11,7 @@ def rechnung():
      
     # Funktionen definieren die Rechenart
     def summe(num1, num2):
-	    sum = num1 + num2
+	    sum = float(num1 + num2)
 	    print(sum)
 	    return
 
@@ -21,12 +21,12 @@ def rechnung():
 	    return
 	
     def quotient(num1, num2):
-	    quotient = float(num1 // num2)
+	    quotient = num1 / num2
 	    print(quotient)
 	    return
 	
     def differenz(num1, num2):
-	    differenz = num1 - num2
+	    differenz = float(num1 - num2)
 	    print(differenz)
 	    return
     
